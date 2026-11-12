@@ -1,0 +1,4 @@
+﻿particion,inicio,fin,registros,ceros,positivos
+entrenamiento,2008-06-08,2016-04-04,136,25,111
+validacion,2017-01-05,2019-01-31,368,147,221
+prueba,2023-03-03,2024-02-29,395,14,381

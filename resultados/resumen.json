@@ -1,0 +1,198 @@
+{
+  "objetivo": "poblacion_reportada",
+  "unidad": "personas reportadas por caso",
+  "modelo": "Gradient Boosting",
+  "configuracion": "150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",
+  "semilla": 42,
+  "n_cohorte": 899,
+  "n_elegibles": 899,
+  "n_excluidos": 0,
+  "particiones": {
+    "entrenamiento": 136,
+    "validacion": 368,
+    "prueba": 395
+  },
+  "n_ceros_elegibles": 186,
+  "predicciones_distintas": 221,
+  "predicciones_cero": 0,
+  "supera_referencia_validacion": true,
+  "supera_referencia_prueba": true,
+  "prueba_modelo": {
+    "modelo": "Gradient Boosting",
+    "etapa": "prueba",
+    "configuracion": "150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",
+    "n": 395,
+    "MAE": 540.5402532810093,
+    "RMSE": 1271.0400485482896,
+    "R2": 0.5856647463579974
+  },
+  "prueba_referencia": {
+    "modelo": "Mediana histórica",
+    "etapa": "prueba",
+    "configuracion": "Mediana del objetivo en los datos de ajuste",
+    "n": 395,
+    "MAE": 791.9240506329114,
+    "RMSE": 2112.062373215912,
+    "R2": -0.1440549814668448
+  },
+  "validacion_modelo": {
+    "modelo": "Gradient Boosting",
+    "etapa": "validacion",
+    "configuracion": "150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",
+    "n": 368,
+    "MAE": 595.8563213925911,
+    "RMSE": 3620.8093570607916,
+    "R2": 0.13824445838259125
+  },
+  "validacion_referencia": {
+    "modelo": "Mediana histórica",
+    "etapa": "validacion",
+    "configuracion": "Mediana del objetivo en los datos de ajuste",
+    "n": 368,
+    "MAE": 1043.2798913043478,
+    "RMSE": 4019.1437267402684,
+    "R2": -0.06179295909817939
+  },
+  "mediana_ajuste": 105.0,
+  "categorias": {
+    "provincia": [
+      "AYABACA",
+      "HUANCABAMBA",
+      "MORROPON",
+      "PAITA",
+      "PIURA",
+      "SECHURA",
+      "SULLANA",
+      "TALARA"
+    ],
+    "peligro": [
+      "DESLIZAMIENTO",
+      "EROSION",
+      "HUAYCO",
+      "INUNDACION",
+      "LLUVIA INTENSA"
+    ]
+  },
+  "rangos": {
+    "viviendas_afectadas": [
+      0,
+      8009
+    ],
+    "viviendas_destruidas": [
+      0,
+      6585
+    ]
+  },
+  "combinaciones": [
+    [
+      "MORROPON",
+      "EROSION"
+    ],
+    [
+      "PIURA",
+      "EROSION"
+    ],
+    [
+      "AYABACA",
+      "DESLIZAMIENTO"
+    ],
+    [
+      "HUANCABAMBA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "AYABACA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "PIURA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "SULLANA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "MORROPON",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "SECHURA",
+      "DESLIZAMIENTO"
+    ],
+    [
+      "SECHURA",
+      "INUNDACION"
+    ],
+    [
+      "SULLANA",
+      "INUNDACION"
+    ],
+    [
+      "HUANCABAMBA",
+      "EROSION"
+    ],
+    [
+      "HUANCABAMBA",
+      "DESLIZAMIENTO"
+    ],
+    [
+      "PIURA",
+      "DESLIZAMIENTO"
+    ],
+    [
+      "TALARA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "SULLANA",
+      "EROSION"
+    ],
+    [
+      "PIURA",
+      "INUNDACION"
+    ],
+    [
+      "HUANCABAMBA",
+      "HUAYCO"
+    ],
+    [
+      "PAITA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "SECHURA",
+      "LLUVIA INTENSA"
+    ],
+    [
+      "MORROPON",
+      "INUNDACION"
+    ],
+    [
+      "AYABACA",
+      "HUAYCO"
+    ]
+  ],
+  "procedimiento": "Configuraciones fijas; elección del regresor por MAE de validación; reajuste con entrenamiento y validación; comparación retrospectiva con el episodio 2023–2024.",
+  "limites": "Las entradas contienen daños en viviendas ya observados. Se estima población reportada por emergencia y se calculan requerimientos alimentarios normativos. No se mide demanda alimentaria observada ni se pronostica la ocurrencia de El Niño. Evaluación retrospectiva; no constituye una validación externa independiente.",
+  "versiones": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "huellas": {
+    "dataset": "0a995e6612c4dfe688040b45ad370be7a44baa486e3b630a3d3dfe6ec11c9765",
+    "episodios": "fa9cff82f98fa5a458fc289028d36ce437f48284afcdd9cf075d365550eee8d6",
+    "modelo": "44485162915e70d252beef7f3c98931ad6137ba2eb96ffee43c6f9ee196552a3"
+  },
+  "demanda": {
+    "tipo": "normativa",
+    "dias_evaluacion": 7,
+    "fuente": "https://bvpad.indeci.gob.pe/doc/folletos/2017/Manual%20para%20la%20AAE%20Peru.pdf",
+    "tabla": "Cuadro 7, página impresa 10",
+    "formula": "Q = población planificada × días × ración por persona y día",
+    "alcance": "Cobertura total de las personas reportadas; no observaciones de demanda alimentaria."
+  }
+}

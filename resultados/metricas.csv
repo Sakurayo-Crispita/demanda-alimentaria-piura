@@ -1,0 +1,13 @@
+﻿modelo,etapa,configuracion,n,MAE,RMSE,R2
+Mediana histórica,entrenamiento,Mediana del objetivo en los datos de ajuste,136,918.4411764705883,3456.4152183678257,-0.06490156217417953
+Mediana histórica,validacion,Mediana del objetivo en los datos de ajuste,368,1043.2798913043478,4019.1437267402684,-0.06179295909817939
+Regresión lineal,entrenamiento,Sin transformación del objetivo,136,780.783927021678,2671.8366849443128,0.36367723042636724
+Regresión lineal,validacion,Sin transformación del objetivo,368,790.8217204421254,2669.481504451819,0.531589524142097
+Random Forest,entrenamiento,200 árboles; profundidad 8; hoja mínima 4,136,771.2300217016221,2760.2761940572623,0.32085465764349674
+Random Forest,validacion,200 árboles; profundidad 8; hoja mínima 4,368,728.4880407557026,3396.975588675452,0.24149644795729208
+Gradient Boosting,entrenamiento,"150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",136,631.4643961847531,3237.2878021709676,0.0658421479522514
+Gradient Boosting,validacion,"150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",368,595.8563213925911,3620.8093570607916,0.13824445838259125
+Mediana histórica,prueba,Mediana del objetivo en los datos de ajuste,395,791.9240506329114,2112.062373215912,-0.1440549814668448
+Regresión lineal,prueba,Sin transformación del objetivo,395,794.6820348101954,1885.2214315811545,0.08849689205398292
+Random Forest,prueba,200 árboles; profundidad 8; hoja mínima 4,395,1014.0281300889852,2328.343280889785,-0.3903605597581381
+Gradient Boosting,prueba,"150 árboles; profundidad 2; tasa 0,04; pérdida Huber; hoja mínima 10",395,540.5402532810093,1271.0400485482896,0.5856647463579974

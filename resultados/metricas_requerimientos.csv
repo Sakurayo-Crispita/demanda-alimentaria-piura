@@ -1,0 +1,6 @@
+﻿recurso,unidad,dias,n,MAE_normativo,RMSE_normativo,MAE_referencia_normativo,referencia_comparacion
+Cereales,kg,7,395,1136.0627848101267,2669.522281825825,1663.0405063291141,poblacion_reportada_por_racion_oficial
+Menestras,kg,7,395,568.0313924050633,1334.7611409129124,831.5202531645571,poblacion_reportada_por_racion_oficial
+Azúcar,kg,7,395,151.47503797468354,355.93630424344326,221.7387341772152,poblacion_reportada_por_racion_oficial
+Aceite vegetal,litros,7,395,151.47503797468354,355.93630424344326,221.7387341772152,poblacion_reportada_por_racion_oficial
+Conserva de origen animal,kg,7,395,227.2125569620253,533.9044563651648,332.60810126582277,poblacion_reportada_por_racion_oficial
